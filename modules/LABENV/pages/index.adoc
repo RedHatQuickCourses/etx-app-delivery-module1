@@ -1,8 +1,6 @@
 = Lab Environment
 
-This classroom does *NOT* have Red Hat Connectivity Link (RHCL) pre-installed. You install and configure a RHCL in this course, and then continue for upcoming lab sections.
-
-Click the https://demo.redhat.com/[RHDP] link above, log in to RHDP, and click `Order` to request a new https://demo.redhat.com/catalog?search=AWS+with+OpenShift+Open+Environment&item=babylon-catalog-prod%2Fsandboxes-gpte.sandbox-ocp.prod[AWS with OpenShift Open Environment]. On the order page for the catalog item, do the following:
+Click the https://demo.redhat.com/[RHDP] link above, log in to RHDP, and click `Order` to request a new https://catalog.demo.redhat.com/catalog/babylon-catalog-dev?item=babylon-catalog-dev/openshift-cnv.app-platform-factory-cnv.dev&utm_source=webapp&utm_medium=share-link[Service Enablement: App Platform Software Factory]. On the order page for the catalog item, do the following:
 
 * *Activity*: Select `Practice/Enablement`
 * *Purpose*: Select `Learning about the Product`
@@ -15,9 +13,6 @@ Click the https://demo.redhat.com/[RHDP] link above, log in to RHDP, and click `
 * *Control Plane Instance Type*: `m6a.4xlarge`
 
 * Select the checkbox at the bottom of the page to confirm that lab costs will be charged to your cost center, and click `Order`.
-* You can refer below image to confirm the lab settings.
-+
-image::labenv.png[align="center"]
 
 NOTE: The lab environment will take an hour to provision. You can check the status and details of the OpenShift cluster from the `Services` page of RHDP. The classroom is available for 48 hours initially. You can extend the duration of classroom availability by clicking `Help > Get Technical Help` in RHDP, and then requesting an extension by opening a ServiceNow ticket with the RHDP team.
 

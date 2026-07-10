@@ -1,0 +1,174 @@
+= Lab Exercise: Branching in Practice
+:navtitle: Lab Exercise
+
+Now let's practice the fundamental branching operations you'll use throughout Day 2 labs.
+
+== Exercise 1: Create a Feature Branch
+
+Create a new branch for your changes:
+
+[source,bash,role=execute]
+----
+# Ensure you're on main
+git checkout main
+
+# Create and switch to feature branch
+git checkout -b feature/update-readme
+
+# Verify you're on the new branch
+git branch
+----
+
+.Expected Output
+[source,text]
+----
+* feature/update-readme
+  main
+----
+
+The asterisk (*) indicates your current branch.
+
+[NOTE]
+====
+**Branch naming convention:**
+
+* `feature/` - New features
+* `fix/` - Bug fixes
+* `docs/` - Documentation changes
+* `refactor/` - Code refactoring
+
+Example: `feature/add-authentication`, `fix/login-bug`
+====
+
+== Exercise 2: Make Changes and Commit
+
+Make a simple change to the README:
+
+[source,bash,role=execute,subs="attributes+"]
+----
+# Add your name to the README
+cat >> README.md << EOF
+
+## Workshop Participant
+- Name: PUT_YOUR_NAME_HERE
+- Date: $(date +%Y-%m-%d)
+EOF
+
+# View what changed
+git status
+git diff README.md
+----
+
+TIP: Replace PUT_YOUR_NAME_HERE with your name.
+
+Stage and commit your changes:
+
+[source,bash,role=execute]
+----
+# Stage the file
+git add README.md
+
+# Commit with a descriptive message
+git commit -m "docs: add workshop participant information"
+
+# View your commit
+git log --oneline -1
+----
+
+.Commit Message Format
+[TIP]
+====
+Using https://www.conventionalcommits.org/en/v1.0.0/[conventional commit^] format creates
+a commit message that is easy to understand and follow:
+
+* `feat:` - New feature
+* `fix:` - Bug fix
+* `docs:` - Documentation
+* `refactor:` - Code restructuring
+* `test:` - Adding tests
+* `chore:` - Miscellaneous changes
+
+Example: `feat: add user authentication`
+====
+
+== Exercise 3: Push to Remote
+
+Push your branch to GitLab:
+
+[source,bash,role=execute]
+----
+# Push to remote (first time for this branch)
+git push -u origin feature/update-readme
+----
+
+.Expected Output
+[source,text]
+----
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 312 bytes | 312.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To {gitlab_url}/software-factory/etx_app_base_app
+ * [new branch]      feature/update-readme -> feature/update-readme
+----
+
+== Exercise 4: Verify in GitLab UI
+
+1. Get the GitLab URL and open it in your browser:
++
+[source,bash,role=execute]
+----
+echo "Open this URL in your browser: $GITLAB_URL"
+----
+
+2. Login with Keycloak (if not already logged in)
+3. Navigate to: **Projects** → **software-factory** → **etx_app_base_app**
+4. Click on **Code** → **Branches**
+5. You should see your `feature/update-readme` branch
+
+image::gitlab-branches-view.png[GitLab Branches,600,align="center"]
+
+== Exercise 5: Merge Your Changes
+
+In a real workflow, you'd create a Merge Request for review. For this exercise, merge directly:
+
+[source,bash,role=execute]
+----
+# Switch to main
+git checkout main
+
+# Merge your feature branch
+git merge feature/update-readme
+----
+
+.Expected Output (Fast-forward merge)
+[source,text]
+----
+Updating a1b2c3d..e4f5g6h
+Fast-forward
+ README.md | 4 ++++
+ 1 file changed, 4 insertions(+)
+----
+
+[NOTE]
+====
+**Fast-forward merge:** Git simply moves the `main` pointer forward because no other changes were made to `main`. This is the simplest type of merge.
+====
+
+Push the merged changes:
+
+[source,bash,role=execute]
+----
+git push origin main
+----
+
+Clean up the feature branch:
+
+[source,bash,role=execute]
+----
+# Delete local branch
+git branch -d feature/update-readme
+
+# Delete remote branch
+git push origin --delete feature/update-readme
+----

@@ -1,1 +1,1 @@
-* xref:index.adoc[Developer Experience and GitOps Workflows]
+* xref:index.adoc[Application Platform Delivery Foundations]
