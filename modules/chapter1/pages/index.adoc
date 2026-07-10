@@ -1,0 +1,110 @@
+:imagesdir: ../images
+
+= Understanding the Need for Platform Engineering
+
+== The Developer's Struggle
+
+* Imagine you are a developer who has just finished building a _new_ feature that customers have been eagerly waiting for. The code works perfectly on your machine, but now comes the difficult part—getting it into production.
++
+image::developer.png[align="center", height="300", width="300"]
++
+.Questions begin to pile up: Click here for a quick primer
+[%collapsible]
+====
+* How do I onboard my application onto the platform?
+* Which tools, frameworks, and libraries should I use, and are they approved by the organization?
+* How do I deploy my code quickly and receive feedback faster?
+* What changes are required to modernize my application while continuing to deliver business value?
+* How can I ensure my application meets security and compliance requirements?
+* If I need new capabilities from the platform, how do I request them?
+====
++
+* Instead of focusing on delivering business value, developers often spend significant time navigating tooling decisions, understanding platform processes, modernizing applications, and coordinating with multiple teams. As complexity grows, innovation slows and delivery becomes more difficult.
+
+== The Platform Team's Struggle
+
+* On the other side of the organization sits the platform team, responsible for building and operating the platforms that developers rely on every day.
++
+image::platform.png[align="center", height="300", width="300"]
++
+.Their challenges look different, but are equally demanding. Click here for a quick primer
+[%collapsible]
+====
+* How do we increase adoption of the platform we've invested so much effort building?
+* How can we continue innovating while also maintaining and supporting existing services?
+* How do we manage developer requests for capabilities that cannot be immediately provided?
+* Why do developers see the platform as an obstacle rather than an enabler?
+* How do we reduce the never-ending backlog of support tickets and service requests?
+* How can we encourage developers to use the platform as intended without restricting productivity?
+* How do we empower developers with greater ownership while maintaining security and governance?
+* How do we measure whether the platform is actually delivering value to the organization?
+====
++
+* Platform teams often struggle to balance developer experience, operational excellence, security requirements, and business expectations—all at the same time.
+
+== DevOps Apocalypse
+
+* For years, organizations embraced a "Do Everything" approach
++
+.Click here for a quick overview of the challenges:
+[%collapsible]
+====
+* Expecting developers to become experts in infrastructure, security, compliance, deployment pipelines, monitoring, and operations, while platform teams attempted to support every request manually.
+* As systems grew more complex, this model began to break down.
+* Developers became overwhelmed by cognitive overload.
+* Platform teams became bottlenecks buried under an ever-growing backlog of requests.
+* The result was slower delivery, increased frustration, and reduced innovation across the organization.
+====
++
+image::apo.png[align="center", height="300", width="300"]
++
+* Out of these challenges emerged Platform Engineering.
+* Platform Engineering applies a product mindset to internal platforms, treating developers as customers and the platform itself as a product designed to solve their problems.
+* By providing self-service capabilities, golden paths, and built-in security and governance, platform engineering enables developers to focus on what they do best—building applications that deliver business value.
+* Instead of choosing between speed and control, organizations can achieve both.
+* Platform Engineering accelerates software delivery through standardization, automation, and a relentless focus on developer experience.
+
+== What is DevEx and why is it a solution?
+
+Developer Experience (DevEx) is the practice that makes Platform Engineering successful.
+
+.Click here to know: _What is it?_
+[%collapsible]
+====
+* Developer Experience (DevEx) is the sum of all factors that affect a developer's work throughout the Software Development Lifecycle (SDLC).
+* It encompasses the tools, processes, platforms, environments, and organizational practices that influence how effectively developers can build, test, deploy, and operate software.
+* The goal of DevEx is to reduce friction and enable developers to focus on delivering business value.
+====
+
+.Click here to know: _Why does it matter?_
+[%collapsible]
+====
+* Platform Engineering succeeds when platforms are designed around the needs of developers.
+* Developer feedback is critical and should flow continuously between developers and platform teams.
+* This feedback helps identify friction points, prioritize improvements, and guide the evolution of the platform.
+* By treating developers as customers, platform teams can create solutions that are easier to adopt and more effective to use.
+====
+
+.Click here to know: _Business Outcomes_
+[%collapsible]
+====
+* Prioritizing Developer Experience makes it easier to develop, test, deploy, and operate software.
+* Reduced friction leads to higher developer productivity and satisfaction.
+* Faster feedback cycles enable teams to innovate more quickly and deliver value sooner.
+* The result is improved software quality, faster innovation, and better business outcomes.
+====
+
+== Benefits of a Developer-Centric Culture
+
+* But you might be wondering why should companies care about measuring and improving developer productivity? _Well, it is simple!_ 
++
+image::4x.png[align="center", height="400", width="400"]
++
+** Companies that care and have a great developer centric culture report a massive boost in revenue - a 400% percent increase in revenue compared to companies that don’t have developer centric cultures. 
+
+* A Developer Centric culture delivers happiness!
+** Happier employees, in turn make companies more productive and result in that 4x revenue increase. 
+
+* If you get a chance, definitely read the https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/developer-velocity-how-software-excellence-fuels-business-performance[McKinsey article, window=browser]. It is fascinating! 
+
+* Another big benefit of developer centric companies is employee retention. Happy, productive employees want to stay longer and that in turn drives more revenue. 

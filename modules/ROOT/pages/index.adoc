@@ -1,0 +1,39 @@
+= Foundations: Developer Experience and GitOps Workflows
+:navtitle: Home
+
+== Introduction
+
+Welcome to this quick course on the _**Foundations: Developer Experience and GitOps Workflows**_.
+This course is the `first` in a series of `six` courses about **Application Platform Delivery**:
+
+* Foundations: Developer Experience and GitOps Workflows (_This course_)
+* https://link[_Module 2_, window=browser]
+
+== What's in this course?
+
+* This course is designed to ....... implement its features, focusing on different user roles:
+
+Enable learners to understand the principles of Developer Experience, Platform Engineering, and GitOps-based software delivery while preparing the environment and skills required for subsequent Software Factory implementation labs.
+
+Duration: 2 hours
+
+== Contributors
+
+The PTL team acknowledges the valuable contributions of the following Red Hat associates:
+
+* .. (SME)
+* .. (SME)
+* Yogita Soni (Content Architect)
+* Anna Swicegood (Learning Product Manager)
+
+== Objectives
+
+On completing this course, you should be able to:
+
+* ...
+
+== Prerequisites
+
+This course assumes that you have the following prior experience:
+
+1. https://training-lms.redhat.com/lmt/clmscoursedetails.prmain?in_sessionId=5034892A2J492834&in_selfContained=N&in_offeringId=57857955&in_tab_group=&in_from_module=CLMSBROWSEV2.PRMAIN[Red Hat OpenShift Container Platform (OCP) Technical Overview] or Kubernetes Basics
