@@ -1,6 +1,6 @@
 site:
-  title: FIXME Course Title
-  start_page: REPLACEREPONAME::index.adoc
+  title: Application Platform Delivery - Foundations
+  start_page: etx-app-delivery-module1::index.adoc
 
 content:
   sources:
