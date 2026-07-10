@@ -1,5 +1,46 @@
 {
-  "totalSeconds": 0,
-  "pageCount": 0,
-  "pages": []
+  "totalSeconds": 535,
+  "pageCount": 8,
+  "pages": [
+    {
+      "module": "ROOT",
+      "page": "index.adoc",
+      "seconds": 47
+    },
+    {
+      "module": "LABENV",
+      "page": "index.adoc",
+      "seconds": 80
+    },
+    {
+      "module": "chapter1",
+      "page": "index.adoc",
+      "seconds": 214
+    },
+    {
+      "module": "chapter1",
+      "page": "section1.adoc",
+      "seconds": 94
+    },
+    {
+      "module": "chapter1",
+      "page": "section2.adoc",
+      "seconds": 63
+    },
+    {
+      "module": "chapter2",
+      "page": "index.adoc",
+      "seconds": 31
+    },
+    {
+      "module": "chapter2",
+      "page": "section1.adoc",
+      "seconds": 3
+    },
+    {
+      "module": "chapter2",
+      "page": "section2.adoc",
+      "seconds": 3
+    }
+  ]
 }
