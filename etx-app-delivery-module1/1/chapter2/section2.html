@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Guided solution (page 2 of 2) :: Application Platform Delivery Foundations</title>
+    <title>Understanding Git/GitHub Flow :: Application Platform Delivery Foundations</title>
     <link rel="prev" href="section1.html">
+    <link rel="next" href="section3.html">
     <meta name="generator" content="Antora 3.2.0-alpha.12">
     <link rel="stylesheet" href="../../../_/css/site.css">
     <link rel="stylesheet" href="../../../_/css/vendor/tabs.css">
@@ -43,7 +44,7 @@
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="../index.html">Developer Experience and GitOps Workflows</a>
+    <a class="nav-link" href="../index.html">Application Platform Delivery Foundations</a>
   </li>
 </ul>
   </li>
@@ -64,7 +65,7 @@
     <a class="nav-link" href="../chapter1/section1.html">Developer Experience Lifecycle</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../chapter1/section2.html">Check your work</a>
+    <a class="nav-link" href="../chapter1/section2.html">Requirements &amp; Environment Setup</a>
   </li>
 </ul>
   </li>
@@ -74,13 +75,19 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="index.html">Guided solution</a>
+    <a class="nav-link" href="index.html">Branching Strategies</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="section1.html">Guided solution (page 1 of 2)</a>
+    <a class="nav-link" href="section1.html">Git Basics Validation</a>
   </li>
   <li class="nav-item is-current-page" data-depth="2">
-    <a class="nav-link" href="section2.html">Guided solution (page 2 of 2)</a>
+    <a class="nav-link" href="section2.html">Understanding Git/GitHub Flow</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="section3.html">Lab Exercise</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="section4.html">Summary</a>
   </li>
 </ul>
   </li>
@@ -115,8 +122,8 @@
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
     <li><a href="../index.html">Application Platform Delivery Foundations</a></li>
-    <li><a href="index.html">Guided solution</a></li>
-    <li><a href="section2.html">Guided solution (page 2 of 2)</a></li>
+    <li><a href="index.html">Branching Strategies</a></li>
+    <li><a href="section2.html">Understanding Git/GitHub Flow</a></li>
   </ul>
 </nav>
 </div>
@@ -125,12 +132,222 @@
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<h1 class="page">Guided solution (page 2 of 2)</h1>
+<h1 class="page">Understanding Git/GitHub Flow</h1>
+<div class="sect1">
+<h2 id="_gitflow"><a class="anchor" href="#_gitflow"></a>GitFlow</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="https://nvie.com/img/git-model@2x.png" alt="GitFlow" width="400">
+</div>
+</div>
 <div class="paragraph">
-<p>FIXME: Provide step-by-step instructions here to resolve the issue.</p>
+<p><a href="https://about.gitlab.com/blog/what-is-gitflow/" target="_blank" rel="noopener">GitFlow</a> is a structured branching model
+that separates development and release work through dedicated branch types,
+making it suitable for teams with planned release cycles.</p>
+</div>
+<div class="paragraph">
+<p><strong>Characteristics:</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Multiple long-lived branches: <code>main</code>, <code>develop</code>, <code>release/*</code>, <code>hotfix/*</code></p>
+</li>
+<li>
+<p>Feature branches created from <code>develop</code></p>
+</li>
+<li>
+<p>Release branches for production preparation</p>
+</li>
+<li>
+<p>Hotfix branches for urgent production fixes</p>
+</li>
+<li>
+<p>Well-defined promotion path</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Best suited for:</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Teams with scheduled release cycles (monthly, quarterly)</p>
+</li>
+<li>
+<p>Larger teams with dedicated release managers</p>
+</li>
+<li>
+<p>Projects requiring multiple supported versions</p>
+</li>
+<li>
+<p>Enterprise applications with formal change control</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Branch structure:</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>main</code> - Production-ready code</p>
+</li>
+<li>
+<p><code>develop</code> - Integration branch for features</p>
+</li>
+<li>
+<p><code>feature/*</code> - New features (from develop)</p>
+</li>
+<li>
+<p><code>release/*</code> - Preparing next production release</p>
+</li>
+<li>
+<p><code>hotfix/*</code> - Emergency production fixes (from main)</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_github_flow"><a class="anchor" href="#_github_flow"></a>GitHub Flow</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*S4VJPf8Mrg3Gn5cR7JK62w.png" alt="GitHub Flow" width="400">
+</div>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.github.com/en/get-started/using-github/github-flow" target="_blank" rel="noopener">GitHub Flow</a> is a lightweight
+branch-and-pull-request workflow focused on short-lived branches and frequent merges into <code>main</code>.</p>
+</div>
+<div class="paragraph">
+<p><strong>Characteristics:</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Simplified model with <code>main</code> + feature branches</p>
+</li>
+<li>
+<p>Pull Requests for all changes</p>
+</li>
+<li>
+<p>CI/CD runs on every PR</p>
+</li>
+<li>
+<p>Deploy from <code>main</code> after merge</p>
+</li>
+<li>
+<p>No separate develop branch</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Best suited for:</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Teams practicing Continuous Deployment</p>
+</li>
+<li>
+<p>Web applications deployed frequently</p>
+</li>
+<li>
+<p>Projects with strong automated testing</p>
+</li>
+<li>
+<p>Open source projects</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Example workflow:</strong></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash"># Create feature branch
+git checkout -b feature/user-profile
+
+# Work and push frequently
+git commit -am "add user profile page"
+git push origin feature/user-profile
+
+# Open Pull Request in GitLab
+# CI runs automatically
+# Deploy to staging for review
+# Merge to main after approval
+# Deploy to production automatically</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_choosing_the_right_model"><a class="anchor" href="#_choosing_the_right_model"></a>Choosing the Right Model</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 14.2857%;">
+<col style="width: 28.5714%;">
+<col style="width: 28.5714%;">
+<col style="width: 28.5715%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Model</th>
+<th class="tableblock halign-left valign-top">Release Frequency</th>
+<th class="tableblock halign-left valign-top">Team Size</th>
+<th class="tableblock halign-left valign-top">Complexity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Trunk-Based</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Continuous</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Small-Medium</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Low</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">GitFlow</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Scheduled</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Medium-Large</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">High</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">GitHub Flow</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Continuous</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Any</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Medium</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><strong>For this workshop</strong>, we use <strong>Trunk-Based Development</strong> concepts:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Short-lived feature branches</p>
+</li>
+<li>
+<p>Frequent integration</p>
+</li>
+<li>
+<p>CI/CD automation</p>
+</li>
+<li>
+<p>GitOps for deployment</p>
+</li>
+</ul>
+</div>
+</div>
 </div>
 <nav class="pagination">
-  <span class="prev"><a href="section1.html">Guided solution (page 1 of 2)</a></span>
+  <span class="prev"><a href="section1.html">Git Basics Validation</a></span>
+  <span class="next"><a href="section3.html">Lab Exercise</a></span>
 </nav>
 </article>
   </div>

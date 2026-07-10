@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Lab Exercise: Branching in Practice :: Application Platform Delivery Foundations</title>
+    <link rel="prev" href="section2.html">
+    <link rel="next" href="section4.html">
+    <meta name="generator" content="Antora 3.2.0-alpha.12">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <link rel="stylesheet" href="../../../_/css/vendor/tabs.css">
+    <link rel="stylesheet" href="../../../_/css/vendor/collapsible.css">
+    <link rel="stylesheet" href="../../../_/css/vendor/reading-time.css">
+    <link rel="stylesheet" href="../../../_/css/vendor/audio-transcript.css">
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://www.redhat.com" target="_blank"><img src="../../../_/img/redhat-logo.png" height="40px" alt="Red Hat"></a>
+      <a class="navbar-item" style="font-size: 24px; color: white" href="../../..">Application Platform Delivery Foundations</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="https://github.com/RedHatQuickCourses/REPLACEREPONAME/issues" target="_blank">Report Issues</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="etx-app-delivery-module1" data-version="1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">Application Platform Delivery Foundations</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html">Application Platform Delivery Foundations</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../LABENV/index.html">Lab Environment</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../chapter1/index.html">Understanding the Need for Platform Engineering</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter1/section1.html">Developer Experience Lifecycle</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter1/section2.html">Requirements &amp; Environment Setup</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="index.html">Branching Strategies</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="section1.html">Git Basics Validation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="section2.html">Understanding Git/GitHub Flow</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="section3.html">Lab Exercise</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="section4.html">Summary</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Application Platform Delivery Foundations</span>
+    <span class="version">1</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../index.html">Application Platform Delivery Foundations</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Application Platform Delivery Foundations</a></li>
+    <li><a href="index.html">Branching Strategies</a></li>
+    <li><a href="section3.html">Lab Exercise</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Lab Exercise: Branching in Practice</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Now let&#8217;s practice the fundamental branching operations you&#8217;ll use throughout Day 2 labs.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_exercise_1_create_a_feature_branch"><a class="anchor" href="#_exercise_1_create_a_feature_branch"></a>Exercise 1: Create a Feature Branch</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Create a new branch for your changes:</p>
+</div>
+<div class="listingblock execute">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash"># Ensure you're on main
+git checkout main
+
+# Create and switch to feature branch
+git checkout -b feature/update-readme
+
+# Verify you're on the new branch
+git branch</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Expected Output</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-text hljs" data-lang="text">* feature/update-readme
+  main</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The asterisk (*) indicates your current branch.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p><strong>Branch naming convention:</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>feature/</code> - New features</p>
+</li>
+<li>
+<p><code>fix/</code> - Bug fixes</p>
+</li>
+<li>
+<p><code>docs/</code> - Documentation changes</p>
+</li>
+<li>
+<p><code>refactor/</code> - Code refactoring</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Example: <code>feature/add-authentication</code>, <code>fix/login-bug</code></p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_exercise_2_make_changes_and_commit"><a class="anchor" href="#_exercise_2_make_changes_and_commit"></a>Exercise 2: Make Changes and Commit</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Make a simple change to the README:</p>
+</div>
+<div class="listingblock execute">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash"># Add your name to the README
+cat &gt;&gt; README.md &lt;&lt; EOF
+
+## Workshop Participant
+- Name: PUT_YOUR_NAME_HERE
+- Date: $(date +%Y-%m-%d)
+EOF
+
+# View what changed
+git status
+git diff README.md</code></pre>
+</div>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+Replace PUT_YOUR_NAME_HERE with your name.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Stage and commit your changes:</p>
+</div>
+<div class="listingblock execute">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash"># Stage the file
+git add README.md
+
+# Commit with a descriptive message
+git commit -m "docs: add workshop participant information"
+
+# View your commit
+git log --oneline -1</code></pre>
+</div>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="title">Commit Message Format</div>
+<div class="paragraph">
+<p>Using <a href="https://www.conventionalcommits.org/en/v1.0.0/" target="_blank" rel="noopener">conventional commit</a> format creates
+a commit message that is easy to understand and follow:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>feat:</code> - New feature</p>
+</li>
+<li>
+<p><code>fix:</code> - Bug fix</p>
+</li>
+<li>
+<p><code>docs:</code> - Documentation</p>
+</li>
+<li>
+<p><code>refactor:</code> - Code restructuring</p>
+</li>
+<li>
+<p><code>test:</code> - Adding tests</p>
+</li>
+<li>
+<p><code>chore:</code> - Miscellaneous changes</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Example: <code>feat: add user authentication</code></p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_exercise_3_push_to_remote"><a class="anchor" href="#_exercise_3_push_to_remote"></a>Exercise 3: Push to Remote</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Push your branch to GitLab:</p>
+</div>
+<div class="listingblock execute">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash"># Push to remote (first time for this branch)
+git push -u origin feature/update-readme</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Expected Output</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-text hljs" data-lang="text">Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 312 bytes | 312.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To {gitlab_url}/software-factory/etx_app_base_app
+ * [new branch]      feature/update-readme -&gt; feature/update-readme</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_exercise_4_verify_in_gitlab_ui"><a class="anchor" href="#_exercise_4_verify_in_gitlab_ui"></a>Exercise 4: Verify in GitLab UI</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Get the GitLab URL and open it in your browser:</p>
+<div class="listingblock execute">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">echo "Open this URL in your browser: $GITLAB_URL"</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Login with Keycloak (if not already logged in)</p>
+</li>
+<li>
+<p>Navigate to: <strong>Projects</strong> → <strong>software-factory</strong> → <strong>etx_app_base_app</strong></p>
+</li>
+<li>
+<p>Click on <strong>Code</strong> → <strong>Branches</strong></p>
+</li>
+<li>
+<p>You should see your <code>feature/update-readme</code> branch</p>
+</li>
+</ol>
+</div>
+<div class="imageblock text-center unresolved">
+<div class="content">
+<img src="gitlab-branches-view.png" alt="GitLab Branches" width="600">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_exercise_5_merge_your_changes"><a class="anchor" href="#_exercise_5_merge_your_changes"></a>Exercise 5: Merge Your Changes</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In a real workflow, you&#8217;d create a Merge Request for review. For this exercise, merge directly:</p>
+</div>
+<div class="listingblock execute">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash"># Switch to main
+git checkout main
+
+# Merge your feature branch
+git merge feature/update-readme</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Expected Output (Fast-forward merge)</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-text hljs" data-lang="text">Updating a1b2c3d..e4f5g6h
+Fast-forward
+ README.md | 4 ++++
+ 1 file changed, 4 insertions(+)</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p><strong>Fast-forward merge:</strong> Git simply moves the <code>main</code> pointer forward because no other changes were made to <code>main</code>. This is the simplest type of merge.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Push the merged changes:</p>
+</div>
+<div class="listingblock execute">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">git push origin main</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Clean up the feature branch:</p>
+</div>
+<div class="listingblock execute">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash"># Delete local branch
+git branch -d feature/update-readme
+
+# Delete remote branch
+git push origin --delete feature/update-readme</code></pre>
+</div>
+</div>
+</div>
+</div>
+<nav class="pagination">
+  <span class="prev"><a href="section2.html">Understanding Git/GitHub Flow</a></span>
+  <span class="next"><a href="section4.html">Summary</a></span>
+</nav>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <img src="../../../_/img/rhl-logo-red.png" height="40px" alt="Red Hat"  href="https://redhat.com" >
+</footer><script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+<script defer src="../../../_/js/vendor/tabs.js"></script>
+<script defer src="../../../_/js/vendor/reading-time.js"></script>
+  </body>
+</html>
