@@ -1,0 +1,129 @@
+= Container Management vs Application Platform
+:navtitle: Container Management vs Application Platform
+
+This lesson explores the difference between a *Container Management Platform* and an *Application Platform*.
+
+== Understanding the Difference
+
+* Kubernetes revolutionized application deployment by providing powerful capabilities for container orchestration, scheduling, scaling, and workload management.
+
+* However, enterprise software delivery involves much more than running containers.
+
+* Development teams also require capabilities such as application builds, CI/CD, GitOps, observability, security, developer self-service, and standardized workflows.
+
+* A *Container Management Platform* provides the infrastructure required to run containerized workloads.
+
+* An *Application Platform* builds on that foundation by integrating the capabilities required to build, deliver, secure, and operate applications throughout their lifecycle.
+
+[IMPORTANT]
+====
+A *Container Management Platform* focuses on *running containers*.
+
+An *Application Platform* focuses on *delivering applications*.
+====
+
+== Comparing the Two Approaches
+
+The following table highlights the key differences between the two approaches.
+
+[cols="1,2,2",options="header"]
+|===
+| Feature | Container Management Platform | Application Platform
+
+| Primary Purpose
+| Deploy, orchestrate, and manage containerized workloads.
+| Build, deliver, secure, and operate applications throughout their lifecycle.
+
+| Primary Focus
+| Infrastructure and container orchestration.
+| Application development and developer productivity.
+
+| Starting Point
+| Deploy existing container images.
+| Develop, build, and deploy applications directly from source code.
+
+| Developer Experience
+| Developers manage infrastructure resources and deployment configurations.
+| Developers consume self-service platform capabilities through standardized workflows.
+
+| Operational Responsibility
+| Platform teams assemble and maintain multiple supporting tools.
+| Integrated platform capabilities reduce operational complexity.
+
+| Platform Engineering
+| Focuses on integrating independent products.
+| Focuses on creating reusable platforms, Golden Paths, and developer self-service.
+
+| Application Networking
+| Advanced networking and security require significant manual configuration.
+| Built-in routing, Service Mesh, and security simplify modern application delivery.
+
+| Enterprise Readiness
+| Provides the foundation for running containers.
+| Provides an integrated enterprise application platform.
+|===
+
+== Why Organizations Choose an Application Platform
+
+As organizations grow, maintaining independent tools for builds, deployments, security, monitoring, networking, and developer onboarding becomes increasingly complex.
+
+An Application Platform simplifies this by providing:
+
+* Integrated developer tools
+* Standardized application runtimes
+* Automated CI/CD and GitOps
+* Built-in security and governance
+* Observability and monitoring
+* Self-service developer experiences
+* Reusable Golden Paths
+
+Instead of assembling and maintaining dozens of independent tools, platform teams provide developers with a consistent, enterprise-ready platform.
+
+TIP: The goal of an Application Platform isn't to replace Kubernetes—it extends Kubernetes with the capabilities required for modern software delivery.
+
+.Key Takeaway
+[NOTE]
+====
+A *Container Management Platform* answers the question:
+
+* *"How do I run containers?"*
+
+An *Application Platform* answers the broader question:
+
+* *"How do I efficiently build, deliver, secure, and operate applications?"*
+====
+
+== Check Your Understanding
+
+.Quiz Time! (Click to expand)
+[%collapsible]
+====
+Which platform best fits each requirement?
+
+|===
+| Requirement | Platform
+
+| Standardized developer workflows
+| ?
+
+| Container orchestration
+| ?
+
+| Built-in CI/CD and GitOps
+| ?
+
+| Self-service developer experience
+| ?
+
+| Running containerized workloads
+| ?
+|===
+
+*Answers*
+
+* Standardized developer workflows → Application Platform
+* Container orchestration → Container Management Platform
+* Built-in CI/CD and GitOps → Application Platform
+* Self-service developer experience → Application Platform
+* Running containerized workloads → Container Management Platform
+====

@@ -1,0 +1,118 @@
+= Diving into Application Platform
+:navtitle: Diving into Application Platform
+
+In this lesson, you'll learn why Kubernetes alone isn't enough and how an *Application Platform* provides the capabilities organizations need to build, deliver, secure, and operate modern applications.
+
+TIP: As you progress through this lesson, think about the tools your organization currently uses. Which capabilities are already integrated, and which ones require separate products?
+
+== Why Isn't Kubernetes Alone Enough?
+
+* Many organizations begin their cloud-native journey by adopting Kubernetes or a managed Kubernetes service.
+
+* Kubernetes excels at orchestrating containerized workloads, but it doesn't provide everything required to support the complete software development lifecycle.
+
+* As organizations scale, development teams also require capabilities such as:
+
+** Application runtimes
+** Build services
+** CI/CD pipelines
+** GitOps
+** Container registries
+** Observability
+** Security and compliance
+** Identity and access management
+** Developer tools
+
+* Without an integrated platform, organizations must select, integrate, secure, upgrade, and maintain each of these capabilities independently. This increases operational complexity and creates inconsistent developer experiences.
+
+[IMPORTANT]
+====
+*Kubernetes answers the question:* **"How do I run containers?"**
+
+*An Application Platform answers the broader question:* **"How do I efficiently build, deliver, secure, and operate applications?"**
+====
+
+== What is an Application Platform?
+
+* An *Application Platform* brings together the capabilities required to support the complete software development lifecycle.
+
+* Rather than providing isolated tools, it delivers an integrated developer experience that enables organizations to standardize software delivery while allowing developers to focus on building applications.
++
+image::app.png[align="center",width="900"]
++
+TIP: Click each capability area below to explore the services typically provided by an Application Platform.
++
+.Application Build (Click to expand)
+[%collapsible]
+====
+Application Build provides everything developers need to design, develop, modernize, and package applications.
+
+Typical capabilities include:
+
+* Application runtimes
+* Developer tools
+* Serverless platforms
+* Cloud service integrations
+* Migration tooling
+
+These capabilities provide standardized development environments that help teams build applications faster while following consistent engineering practices.
+====
++
+.Application Delivery (Click to expand)
+[%collapsible]
+====
+Application Delivery automates how applications are built, tested, deployed, monitored, and managed throughout their lifecycle.
+
+Typical capabilities include:
+
+* CI/CD pipelines
+* GitOps
+* Container registries
+* Observability
+* Logging
+* Virtual machine support
+
+Together, these capabilities improve deployment consistency while reducing operational effort.
+====
++
+.Application Security (Click to expand)
+[%collapsible]
+====
+Application Security embeds security throughout the software delivery lifecycle instead of treating it as a separate activity.
+
+Typical capabilities include:
+
+* Service Mesh
+* Vulnerability scanning
+* Security policy enforcement
+* Certificate and secret management
+* Single Sign-On (SSO)
+
+By integrating security into the platform, organizations can deliver applications that are secure, compliant, and enterprise-ready.
+====
+
+.Key Takeaway
+[NOTE]
+====
+An *Application Platform* combines application development, delivery, and security capabilities into a unified developer experience, allowing teams to focus on delivering software rather than integrating and maintaining individual tools.
+====
+
+== Check Your Understanding
+
+.Quiz Time! (Click to expand)
+[%collapsible]
+====
+Which statement best describes an Application Platform?
+
+A. A platform that only manages containers.
+
+B. A collection of unrelated development tools.
+
+C. A unified platform that provides integrated capabilities for building, delivering, securing, and operating applications.
+
+D. A virtual machine management platform.
+
+*Answer*
+
+*C* — An Application Platform provides an integrated set of capabilities that support the complete software development lifecycle.
+====

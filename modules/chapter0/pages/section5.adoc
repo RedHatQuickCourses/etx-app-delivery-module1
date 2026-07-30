@@ -1,0 +1,83 @@
+= Application Platform Litmus Test
+:navtitle: Application Platform Litmus Test
+
+In this lesson, you'll learn a simple way to evaluate whether a solution qualifies as a modern *Application Platform*.
+
+TIP: As you progress through this lesson, think about your own organization. Does your current platform provide these capabilities as an integrated experience or through separate products?
+
+== The Four Essential Capabilities
+
+Every modern *Application Platform* should provide the following foundational capabilities.
+
+[cols="1,3",options="header"]
+|===
+| Capability | Why It Matters
+
+| *Application Runtimes*
+| Provides standardized environments for developing and running applications.
+
+| *Application Builds*
+| Builds and packages applications into deployable artifacts.
+
+| *Application Delivery (CI/CD)*
+| Automates building, testing, deploying, and promoting applications across environments.
+
+| *Observability*
+| Provides integrated monitoring, logging, and tracing to understand application health and troubleshoot issues.
+|===
+
+These capabilities form the technical foundation of an Application Platform. While organizations can assemble them using independent tools, an Application Platform delivers them as a unified developer experience.
+
+== Beyond Individual Tools
+
+Having the right capabilities is only part of the story.
+
+The real value of an *Application Platform* comes from how those capabilities are integrated and delivered to developers.
+
+Instead of every development team selecting, configuring, and maintaining its own toolchain, the platform provides:
+
+* Standardized development environments
+* Automated build and deployment pipelines
+* Integrated security and policy enforcement
+* Built-in observability
+* Self-service templates and Golden Paths
+
+By providing these capabilities through a consistent platform, organizations improve developer productivity, reduce operational complexity, and establish standardized engineering practices across teams.
+
+== Reflection
+
+.Think About Your Organization (Click to expand)
+[%collapsible]
+====
+Consider your current software delivery platform.
+
+* Which of the four foundational capabilities are already integrated?
+* Which capabilities require separate products or manual integration?
+* Does your platform provide standardized developer workflows?
+* If a new developer joined your team today, how quickly could they build and deploy an application?
+====
+
+== Check Your Understanding
+
+.Quiz Time! (Click to expand)
+[%collapsible]
+====
+A platform provides the following capabilities:
+
+* Kubernetes
+* Application runtimes
+* CI/CD pipelines
+* Observability
+
+However, each development team is responsible for integrating its own security tools, deployment workflows, and developer onboarding process.
+
+Would you consider this a complete *Application Platform*?
+
+A. Yes
+
+B. No
+
+*Answer*
+
+**B** — Although several foundational capabilities are available, a complete Application Platform also provides an integrated developer experience with standardized workflows, built-in automation, and organizational guardrails.
+====

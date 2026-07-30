@@ -6,7 +6,7 @@
 Welcome to this quick course on the _**Application Platform Delivery Foundations**_.
 This course is the `first` in a series of `six` courses about **Application Platform Delivery**:
 
-* Foundations: Developer Experience and GitOps Workflows (_This course_)
+* _**Application Platform Delivery Foundations**_ (_This course_)
 * https://link[_Cloud-Native Development with Dev Spaces_, window=browser]
 * https://link[_Software Factory and CI/CD_, window=browser]
 * https://link[_Application Modernization_, window=browser]
