@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Meet the Teams Behind an Application Platform :: Application Platform Delivery Foundations</title>
+    <link rel="prev" href="section5.html">
+    <link rel="next" href="section7.html">
+    <meta name="generator" content="Antora 3.2.0-alpha.12">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <link rel="stylesheet" href="../../../_/css/vendor/tabs.css">
+    <link rel="stylesheet" href="../../../_/css/vendor/collapsible.css">
+    <link rel="stylesheet" href="../../../_/css/vendor/reading-time.css">
+    <link rel="stylesheet" href="../../../_/css/vendor/audio-transcript.css">
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://www.redhat.com" target="_blank"><img src="../../../_/img/redhat-logo.png" height="40px" alt="Red Hat"></a>
+      <a class="navbar-item" style="font-size: 24px; color: white" href="../../..">Application Platform Delivery Foundations</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="https://github.com/RedHatQuickCourses/REPLACEREPONAME/issues" target="_blank">Report Issues</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="etx-app-delivery-module1" data-version="1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">Application Platform Delivery Foundations</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html">Application Platform Delivery Foundations</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="section1.html">The Evolution of Platform Delivery</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="section2.html">Diving into Application Platform</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="section3.html">Container Management vs Application Platform</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="section4.html">Delivering Application Platform</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="section5.html">Application Platform Litmus Test</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="section6.html">Meet the Teams</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="section7.html">Summary</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../references/references.html">References</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Application Platform Delivery Foundations</span>
+    <span class="version">1</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../index.html">Application Platform Delivery Foundations</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Application Platform Delivery Foundations</a></li>
+    <li><a href="section6.html">Meet the Teams</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Meet the Teams Behind an Application Platform</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>In this lesson, you&#8217;ll meet the three primary personas that interact with an Application Platform and understand how each team contributes to modern software delivery.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+As you progress through this lesson, think about your own organization. Which team do you work with most closely, and what challenges do they face when building, deploying, or operating applications?
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_why_different_teams_matter"><a class="anchor" href="#_why_different_teams_matter"></a>Why Different Teams Matter</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Modern software delivery is a collaborative effort.</p>
+</li>
+<li>
+<p>Rather than being owned by a single team, building and operating applications requires close collaboration between <strong>Operations Engineers</strong>, <strong>Platform Engineers</strong>, and <strong>Application Developers</strong>. Although they share the same business goals, each team has different responsibilities, priorities, and measures of success.</p>
+<div class="imageblock text-center">
+<div class="content">
+<img src="_images/personas.png" alt="personas" width="900">
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Throughout this learning path, you&#8217;ll revisit these personas to understand how different Application Platform capabilities help solve their day-to-day challenges.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_meet_alex_operations_engineer"><a class="anchor" href="#_meet_alex_operations_engineer"></a>Meet Alex — Operations Engineer</h2>
+<div class="sectionbody">
+<div class="imageblock text-right">
+<div class="content">
+<img src="_images/p1.png" alt="p1" width="220">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Alex is responsible for the reliability, security, and day-to-day operation of the platform.</p>
+</li>
+<li>
+<p>His work ensures that developers have a stable and secure environment for running applications.</p>
+</li>
+<li>
+<p>Success is measured by:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Platform availability</p>
+</li>
+<li>
+<p>Reliability</p>
+</li>
+<li>
+<p>Security</p>
+</li>
+<li>
+<p>Compliance</p>
+</li>
+<li>
+<p>Operational stability</p>
+<details>
+<summary class="title">Common questions Alex asks (Click to expand)</summary>
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>How do I keep the platform secure?</p>
+</li>
+<li>
+<p>How do I perform upgrades with minimal downtime?</p>
+</li>
+<li>
+<p>How do I enforce organizational policies?</p>
+</li>
+<li>
+<p>How can I monitor cluster health and reliability?</p>
+</li>
+</ul>
+</div>
+</div>
+</details>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+Alex wants developers to move quickly—but never at the expense of security or reliability.
+</td>
+</tr>
+</table>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_meet_penny_platform_engineer"><a class="anchor" href="#_meet_penny_platform_engineer"></a>Meet Penny — Platform Engineer</h2>
+<div class="sectionbody">
+<div class="imageblock text-right">
+<div class="content">
+<img src="_images/p2.png" alt="p2" width="220">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Penny builds and maintains the Internal Developer Platform used by application teams.</p>
+</li>
+<li>
+<p>Rather than provisioning infrastructure for every request, she creates reusable templates, Golden Paths, and self-service capabilities that simplify software delivery while enforcing organizational standards.</p>
+</li>
+<li>
+<p>Success is measured by:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Developer productivity</p>
+</li>
+<li>
+<p>Platform adoption</p>
+</li>
+<li>
+<p>Golden Paths</p>
+</li>
+<li>
+<p>Standardization</p>
+</li>
+<li>
+<p>Developer satisfaction</p>
+<details>
+<summary class="title">Common questions Penny asks (Click to expand)</summary>
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>How can developers onboard faster?</p>
+</li>
+<li>
+<p>How do I reduce repetitive operational work?</p>
+</li>
+<li>
+<p>How can I provide secure defaults?</p>
+</li>
+<li>
+<p>How do I standardize software delivery across teams?</p>
+</li>
+</ul>
+</div>
+</div>
+</details>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+Penny&#8217;s goal is to make the recommended path the easiest path for developers.
+</td>
+</tr>
+</table>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_meet_david_application_developer"><a class="anchor" href="#_meet_david_application_developer"></a>Meet David — Application Developer</h2>
+<div class="sectionbody">
+<div class="imageblock text-right">
+<div class="content">
+<img src="_images/p3.png" alt="p3" width="220">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>David develops application features that deliver business value.</p>
+</li>
+<li>
+<p>He wants to spend his time writing code rather than managing infrastructure, configuring Kubernetes resources, or maintaining deployment pipelines.</p>
+</li>
+<li>
+<p>Success is measured by:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Shipping features quickly</p>
+</li>
+<li>
+<p>Fast onboarding</p>
+</li>
+<li>
+<p>Reduced cognitive load</p>
+</li>
+<li>
+<p>Development velocity</p>
+<details>
+<summary class="title">Common questions David asks (Click to expand)</summary>
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>How quickly can I deploy my application?</p>
+</li>
+<li>
+<p>Do I need to understand Kubernetes?</p>
+</li>
+<li>
+<p>Can I create new services without opening infrastructure tickets?</p>
+</li>
+<li>
+<p>How can I spend more time writing code and less time managing platform configuration?</p>
+</li>
+</ul>
+</div>
+</div>
+</details>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+David wants to focus on building applications—not managing infrastructure.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_comparing_the_personas"><a class="anchor" href="#_comparing_the_personas"></a>Comparing the Personas</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Although each team has different responsibilities, they all rely on the same Application Platform.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Operations Engineer</th>
+<th class="tableblock halign-left valign-top">Platform Engineer</th>
+<th class="tableblock halign-left valign-top">Application Developer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Reliability</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Developer Experience</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Feature Delivery</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Security</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Standardization</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fast Onboarding</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Compliance</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Self-Service</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Productivity</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Platform Availability</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Golden Paths</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Rapid Delivery</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_why_an_application_platform_matters"><a class="anchor" href="#_why_an_application_platform_matters"></a>Why an Application Platform Matters</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Without an integrated Application Platform, each team spends significant effort selecting, integrating, and maintaining independent tools for building, deploying, securing, and operating applications.</p>
+</li>
+<li>
+<p>An Application Platform reduces this complexity by providing a consistent developer experience that benefits every persona:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Operations Engineers manage secure and reliable platforms.</p>
+</li>
+<li>
+<p>Platform Engineers provide reusable services and organizational guardrails.</p>
+</li>
+<li>
+<p>Application Developers consume self-service capabilities and focus on delivering business value.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_reflection"><a class="anchor" href="#_reflection"></a>Reflection</h2>
+<div class="sectionbody">
+<details>
+<summary class="title">Think About Your Organization (Click to expand)</summary>
+<div class="content">
+<div class="paragraph">
+<p>Consider how software is delivered in your organization.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Which persona best matches your current role?</p>
+</li>
+<li>
+<p>Which team owns the developer platform?</p>
+</li>
+<li>
+<p>Where do developers experience the most friction?</p>
+</li>
+<li>
+<p>Which persona would benefit the most from an Application Platform?</p>
+</li>
+</ul>
+</div>
+</div>
+</details>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_check_your_understanding"><a class="anchor" href="#_check_your_understanding"></a>Check Your Understanding</h2>
+<div class="sectionbody">
+<details>
+<summary class="title">Quiz Time! (Click to expand)</summary>
+<div class="content">
+<div class="paragraph">
+<p>Match each responsibility with the persona most likely responsible for it.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Creating reusable Golden Paths</p>
+</li>
+<li>
+<p>Maintaining platform availability</p>
+</li>
+<li>
+<p>Delivering new application features</p>
+</li>
+<li>
+<p>Improving developer onboarding</p>
+</li>
+<li>
+<p>Enforcing organizational security standards</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><strong>Answers</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Platform Engineer</p>
+</li>
+<li>
+<p>Operations Engineer</p>
+</li>
+<li>
+<p>Application Developer</p>
+</li>
+<li>
+<p>Platform Engineer</p>
+</li>
+<li>
+<p>Operations Engineer</p>
+</li>
+</ol>
+</div>
+</div>
+</details>
+</div>
+</div>
+<nav class="pagination">
+  <span class="prev"><a href="section5.html">Application Platform Litmus Test</a></span>
+  <span class="next"><a href="section7.html">Summary</a></span>
+</nav>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <img src="../../../_/img/rhl-logo-red.png" height="40px" alt="Red Hat"  href="https://redhat.com" >
+</footer><script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+<script defer src="../../../_/js/vendor/tabs.js"></script>
+<script defer src="../../../_/js/vendor/reading-time.js"></script>
+  </body>
+</html>

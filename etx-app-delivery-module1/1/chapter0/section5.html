@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Application Platform Litmus Test :: Application Platform Delivery Foundations</title>
+    <link rel="prev" href="section4.html">
+    <link rel="next" href="section6.html">
+    <meta name="generator" content="Antora 3.2.0-alpha.12">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <link rel="stylesheet" href="../../../_/css/vendor/tabs.css">
+    <link rel="stylesheet" href="../../../_/css/vendor/collapsible.css">
+    <link rel="stylesheet" href="../../../_/css/vendor/reading-time.css">
+    <link rel="stylesheet" href="../../../_/css/vendor/audio-transcript.css">
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://www.redhat.com" target="_blank"><img src="../../../_/img/redhat-logo.png" height="40px" alt="Red Hat"></a>
+      <a class="navbar-item" style="font-size: 24px; color: white" href="../../..">Application Platform Delivery Foundations</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="https://github.com/RedHatQuickCourses/REPLACEREPONAME/issues" target="_blank">Report Issues</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="etx-app-delivery-module1" data-version="1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">Application Platform Delivery Foundations</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html">Application Platform Delivery Foundations</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="section1.html">The Evolution of Platform Delivery</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="section2.html">Diving into Application Platform</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="section3.html">Container Management vs Application Platform</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="section4.html">Delivering Application Platform</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="section5.html">Application Platform Litmus Test</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="section6.html">Meet the Teams</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="section7.html">Summary</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../references/references.html">References</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Application Platform Delivery Foundations</span>
+    <span class="version">1</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../index.html">Application Platform Delivery Foundations</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Application Platform Delivery Foundations</a></li>
+    <li><a href="section5.html">Application Platform Litmus Test</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Application Platform Litmus Test</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>In this lesson, you&#8217;ll learn a simple way to evaluate whether a solution qualifies as a modern <strong>Application Platform</strong>.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+As you progress through this lesson, think about your own organization. Does your current platform provide these capabilities as an integrated experience or through separate products?
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_the_four_essential_capabilities"><a class="anchor" href="#_the_four_essential_capabilities"></a>The Four Essential Capabilities</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Every modern <strong>Application Platform</strong> should provide the following foundational capabilities.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Capability</th>
+<th class="tableblock halign-left valign-top">Why It Matters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Application Runtimes</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Provides standardized environments for developing and running applications.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Application Builds</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Builds and packages applications into deployable artifacts.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Application Delivery (CI/CD)</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Automates building, testing, deploying, and promoting applications across environments.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Observability</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Provides integrated monitoring, logging, and tracing to understand application health and troubleshoot issues.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>These capabilities form the technical foundation of an Application Platform. While organizations can assemble them using independent tools, an Application Platform delivers them as a unified developer experience.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_beyond_individual_tools"><a class="anchor" href="#_beyond_individual_tools"></a>Beyond Individual Tools</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Having the right capabilities is only part of the story.</p>
+</div>
+<div class="paragraph">
+<p>The real value of an <strong>Application Platform</strong> comes from how those capabilities are integrated and delivered to developers.</p>
+</div>
+<div class="paragraph">
+<p>Instead of every development team selecting, configuring, and maintaining its own toolchain, the platform provides:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Standardized development environments</p>
+</li>
+<li>
+<p>Automated build and deployment pipelines</p>
+</li>
+<li>
+<p>Integrated security and policy enforcement</p>
+</li>
+<li>
+<p>Built-in observability</p>
+</li>
+<li>
+<p>Self-service templates and Golden Paths</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>By providing these capabilities through a consistent platform, organizations improve developer productivity, reduce operational complexity, and establish standardized engineering practices across teams.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_reflection"><a class="anchor" href="#_reflection"></a>Reflection</h2>
+<div class="sectionbody">
+<details>
+<summary class="title">Think About Your Organization (Click to expand)</summary>
+<div class="content">
+<div class="paragraph">
+<p>Consider your current software delivery platform.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Which of the four foundational capabilities are already integrated?</p>
+</li>
+<li>
+<p>Which capabilities require separate products or manual integration?</p>
+</li>
+<li>
+<p>Does your platform provide standardized developer workflows?</p>
+</li>
+<li>
+<p>If a new developer joined your team today, how quickly could they build and deploy an application?</p>
+</li>
+</ul>
+</div>
+</div>
+</details>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_check_your_understanding"><a class="anchor" href="#_check_your_understanding"></a>Check Your Understanding</h2>
+<div class="sectionbody">
+<details>
+<summary class="title">Quiz Time! (Click to expand)</summary>
+<div class="content">
+<div class="paragraph">
+<p>A platform provides the following capabilities:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Kubernetes</p>
+</li>
+<li>
+<p>Application runtimes</p>
+</li>
+<li>
+<p>CI/CD pipelines</p>
+</li>
+<li>
+<p>Observability</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>However, each development team is responsible for integrating its own security tools, deployment workflows, and developer onboarding process.</p>
+</div>
+<div class="paragraph">
+<p>Would you consider this a complete <strong>Application Platform</strong>?</p>
+</div>
+<div class="olist upperalpha">
+<ol class="upperalpha" type="A">
+<li>
+<p>Yes</p>
+</li>
+<li>
+<p>No</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><strong>Answer</strong></p>
+</div>
+<div class="paragraph">
+<p><strong>B</strong> — Although several foundational capabilities are available, a complete Application Platform also provides an integrated developer experience with standardized workflows, built-in automation, and organizational guardrails.</p>
+</div>
+</div>
+</details>
+</div>
+</div>
+<nav class="pagination">
+  <span class="prev"><a href="section4.html">Delivering Application Platform</a></span>
+  <span class="next"><a href="section6.html">Meet the Teams</a></span>
+</nav>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <img src="../../../_/img/rhl-logo-red.png" height="40px" alt="Red Hat"  href="https://redhat.com" >
+</footer><script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+<script defer src="../../../_/js/vendor/tabs.js"></script>
+<script defer src="../../../_/js/vendor/reading-time.js"></script>
+  </body>
+</html>
