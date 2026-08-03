@@ -99,20 +99,6 @@ An *Application Platform* combines application development, delivery, and securi
 
 == Check Your Understanding
 
-.Quiz Time! (Click to expand)
-[%collapsible]
-====
-Which statement best describes an Application Platform?
-
-A. A platform that only manages containers.
-
-B. A collection of unrelated development tools.
-
-C. A unified platform that provides integrated capabilities for building, delivering, securing, and operating applications.
-
-D. A virtual machine management platform.
-
-*Answer*
-
-*C* — An Application Platform provides an integrated set of capabilities that support the complete software development lifecycle.
-====
+++++
+<iframe type="text/javascript" src="_attachments/section2-quiz.html" style="width: 100%; max-width: 1024px; height: 800px" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" frameborder="0"></iframe>
+++++

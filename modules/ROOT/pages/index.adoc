@@ -7,11 +7,11 @@ Welcome to this quick course on the _**Application Platform Delivery Foundations
 This course is the `first` in a series of `six` courses about **Application Platform Delivery**:
 
 * _**Application Platform Delivery Foundations**_ (_This course_)
-* https://link[_Cloud-Native Development with Dev Spaces_, window=browser]
-* https://link[_Software Factory and CI/CD_, window=browser]
-* https://link[_Application Modernization_, window=browser]
-* https://link[_Developer Hub and Platform Engineering_, window=browser]
-* https://link[_Trusted Software Supply Chain (TSSC)_, window=browser]
+* https://redhatquickcourses.github.io/etx-app-delivery-module2/[_Software Factory & Developer Experience_,window=_blank]
+* https://redhatquickcourses.github.io/etx-app-delivery-module3/[_Software Factory and CI/CD_,window=_blank]
+* https://redhatquickcourses.github.io/etx-app-delivery-module4/[_DevEx with Developer Hub_,window=_blank]
+* https://redhatquickcourses.github.io/etx-app-delivery-module5/[_Application Modernization_,window=_blank]
+* https://redhatquickcourses.github.io/etx-app-delivery-module6/[_Trusted Software Supply Chain (TSSC)_,window=_blank]
 
 == What's in this course?
 
@@ -26,7 +26,7 @@ The PTL team acknowledges the valuable contributions of the following Red Hat as
 * .. (SME)
 * .. (SME)
 * Yogita Soni (Content Architect)
-* Anna Swicegood (Learning Product Manager)
+* Caitlyn Rymarchyk (Technical Program Manager)
 
 == Objectives
 

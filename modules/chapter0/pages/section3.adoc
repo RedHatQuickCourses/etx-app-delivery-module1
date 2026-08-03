@@ -95,35 +95,6 @@ An *Application Platform* answers the broader question:
 
 == Check Your Understanding
 
-.Quiz Time! (Click to expand)
-[%collapsible]
-====
-Which platform best fits each requirement?
-
-|===
-| Requirement | Platform
-
-| Standardized developer workflows
-| ?
-
-| Container orchestration
-| ?
-
-| Built-in CI/CD and GitOps
-| ?
-
-| Self-service developer experience
-| ?
-
-| Running containerized workloads
-| ?
-|===
-
-*Answers*
-
-* Standardized developer workflows → Application Platform
-* Container orchestration → Container Management Platform
-* Built-in CI/CD and GitOps → Application Platform
-* Self-service developer experience → Application Platform
-* Running containerized workloads → Container Management Platform
-====
+++++
+<iframe type="text/javascript" src="_attachments/section3-quiz.html" style="width: 100%; max-width: 1024px; height: 800px" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" frameborder="0"></iframe>
+++++

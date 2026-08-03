@@ -51,24 +51,6 @@ Reflect on your current software delivery platform.
 
 == Check Your Understanding
 
-.Quiz Time! (Click to expand)
-[%collapsible]
-====
-Your organization wants to provide developers with:
-
-* Standardized application runtimes
-* Automated CI/CD and GitOps
-* Integrated security
-* Built-in observability
-* Self-service developer workflows
-
-Which approach would best support these requirements?
-
-A. Kubernetes with separately integrated tools
-
-B. Red Hat OpenShift
-
-*Answer*
-
-**B** — Red Hat OpenShift provides these capabilities as an integrated Application Platform built on Kubernetes, reducing operational complexity while improving developer productivity.
-====
+++++
+<iframe type="text/javascript" src="_attachments/section4-quiz.html" style="width: 100%; max-width: 1024px; height: 800px" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" frameborder="0"></iframe>
+++++

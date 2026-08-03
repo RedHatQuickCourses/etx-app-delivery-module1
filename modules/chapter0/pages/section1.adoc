@@ -133,20 +133,6 @@ Throughout this learning path, we'll focus primarily on *Platform Engineering* b
 
 == Check Your Understanding
 
-.Quiz Time! (Click to expand)
-[%collapsible]
-====
-Which stage best matches each statement?
-
-. Developers own both application code and infrastructure.
-. Platform teams provide Golden Paths and self-service capabilities.
-. Operations teams provision infrastructure for every application.
-. AI assistants begin interacting directly with the platform.
-
-*Answers*
-
-1. DevOps
-2. Platform Engineering
-3. Traditional IT
-4. AI-Assisted Development
-====
+++++
+<iframe type="text/javascript" src="_attachments/section1-quiz.html" style="width: 100%; max-width: 1024px; height: 800px" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" frameborder="0"></iframe>
+++++

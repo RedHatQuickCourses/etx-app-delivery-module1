@@ -150,22 +150,6 @@ Consider how software is delivered in your organization.
 
 == Check Your Understanding
 
-.Quiz Time! (Click to expand)
-[%collapsible]
-====
-Match each responsibility with the persona most likely responsible for it.
-
-. Creating reusable Golden Paths
-. Maintaining platform availability
-. Delivering new application features
-. Improving developer onboarding
-. Enforcing organizational security standards
-
-*Answers*
-
-1. Platform Engineer
-2. Operations Engineer
-3. Application Developer
-4. Platform Engineer
-5. Operations Engineer
-====
+++++
+<iframe type="text/javascript" src="_attachments/section6-quiz.html" style="width: 100%; max-width: 1024px; height: 800px" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" frameborder="0"></iframe>
+++++
