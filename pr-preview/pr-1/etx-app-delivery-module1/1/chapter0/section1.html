@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>The Evolution of Platform Delivery :: Application Platform Delivery Foundations</title>
+    <link rel="prev" href="../index.html">
+    <link rel="next" href="section2.html">
+    <meta name="generator" content="Antora 3.2.0-alpha.12">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <link rel="stylesheet" href="../../../_/css/vendor/tabs.css">
+    <link rel="stylesheet" href="../../../_/css/vendor/collapsible.css">
+    <link rel="stylesheet" href="../../../_/css/vendor/reading-time.css">
+    <link rel="stylesheet" href="../../../_/css/vendor/audio-transcript.css">
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://www.redhat.com" target="_blank"><img src="../../../_/img/redhat-logo.png" height="40px" alt="Red Hat"></a>
+      <a class="navbar-item" style="font-size: 24px; color: white" href="../../..">Application Platform Delivery Foundations</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="https://github.com/RedHatQuickCourses/REPLACEREPONAME/issues" target="_blank">Report Issues</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="etx-app-delivery-module1" data-version="1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">Application Platform Delivery Foundations</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html">Application Platform Delivery Foundations</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="section1.html">The Evolution of Platform Delivery</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="section2.html">Diving into Application Platform</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="section3.html">Container Management vs Application Platform</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="section4.html">Delivering Application Platform</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="section5.html">Application Platform Litmus Test</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="section6.html">Meet the Teams</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="section7.html">Summary</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../references/references.html">References</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Application Platform Delivery Foundations</span>
+    <span class="version">1</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../index.html">Application Platform Delivery Foundations</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Application Platform Delivery Foundations</a></li>
+    <li><a href="section1.html">The Evolution of Platform Delivery</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">The Evolution of Platform Delivery</h1>
+<div class="sect1">
+<h2 id="_how_software_delivery_has_evolved"><a class="anchor" href="#_how_software_delivery_has_evolved"></a>How Software Delivery Has Evolved</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Modern software delivery has continuously evolved to address new challenges in application development, operations, and scalability.</p>
+</div>
+<div class="paragraph">
+<p>This lesson explores how organizations progressed from <strong>DevOps</strong> to <strong>Site Reliability Engineering (SRE)</strong> and, ultimately, to <strong>Platform Engineering</strong>—the foundation of modern Application Platforms.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+As you progress through this lesson, think about which stage best reflects your current organization.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_it_started_with_devops"><a class="anchor" href="#_it_started_with_devops"></a>It Started with DevOps</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><strong>DevOps</strong> transformed the way software teams collaborated by breaking down the traditional barriers between development and operations.</p>
+</li>
+<li>
+<p>Instead of working in isolation, developers and operations teams shared responsibility for delivering and operating applications.</p>
+</li>
+<li>
+<p>As organizations adopted DevOps practices, developers gradually assumed additional operational responsibilities beyond writing application code.</p>
+<details>
+<summary class="title">What was expected from developers? (Click to expand)</summary>
+<div class="content">
+<div class="paragraph">
+<p>Developers were expected to:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Write application code</p>
+</li>
+<li>
+<p>Build and manage infrastructure</p>
+</li>
+<li>
+<p>Configure CI/CD pipelines</p>
+</li>
+<li>
+<p>Deploy applications</p>
+</li>
+<li>
+<p>Monitor production systems</p>
+</li>
+<li>
+<p>Respond to incidents</p>
+</li>
+<li>
+<p>Understand Kubernetes and cloud platforms</p>
+</li>
+</ul>
+</div>
+</div>
+</details>
+</li>
+</ul>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>While DevOps increased delivery speed, it also introduced a new challenge—<strong>developer cognitive overload</strong>. Developers spent more time managing infrastructure and less time building business features.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_next_came_site_reliability_engineering_sre"><a class="anchor" href="#_next_came_site_reliability_engineering_sre"></a>Next Came Site Reliability Engineering (SRE)</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>As applications became more complex, organizations introduced <strong>Site Reliability Engineering (SRE)</strong> to improve reliability through automation, monitoring, and operational best practices.</p>
+</li>
+<li>
+<p>SRE teams helped automate operational tasks and improve platform reliability. However, as the number of applications and development teams grew, centralized SRE teams often became a bottleneck because every team depended on their expertise.</p>
+<details>
+<summary class="title">Common SRE responsibilities (Click to expand)</summary>
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>Automating operational tasks</p>
+</li>
+<li>
+<p>Improving reliability</p>
+</li>
+<li>
+<p>Monitoring production systems</p>
+</li>
+<li>
+<p>Incident response</p>
+</li>
+<li>
+<p>Performance optimization</p>
+</li>
+<li>
+<p>Capacity planning</p>
+</li>
+</ul>
+</div>
+</div>
+</details>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_then_came_platform_engineering"><a class="anchor" href="#_then_came_platform_engineering"></a>Then Came Platform Engineering</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Platform Engineering</strong> emerged to reduce developer cognitive load while enabling organizations to standardize software delivery.</p>
+</li>
+<li>
+<p>Instead of expecting every developer to become an infrastructure expert—or every SRE team to support every application—platform teams build reusable capabilities that developers can consume through self-service experiences.</p>
+</li>
+<li>
+<p>These capabilities include:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Self-service developer experiences</p>
+</li>
+<li>
+<p>Standardized workflows</p>
+</li>
+<li>
+<p>Golden Paths</p>
+</li>
+<li>
+<p>Internal Developer Platforms (IDPs)</p>
+</li>
+<li>
+<p>Built-in security and governance</p>
+</li>
+<li>
+<p>Automated software delivery</p>
+<div class="imageblock text-center">
+<div class="content">
+<img src="_images/opp.png" alt="opp" width="350">
+</div>
+</div>
+<details>
+<summary class="title">Characteristics of Platform Engineering (Click to expand)</summary>
+<div class="content">
+<div class="paragraph">
+<p>Platform Engineering treats the platform as a product.</p>
+</div>
+<div class="paragraph">
+<p>Rather than building applications directly, Platform Engineers build reusable capabilities that application teams can consume on demand.</p>
+</div>
+<div class="paragraph">
+<p>Their goal is to make the secure, compliant, and recommended path the easiest path for developers.</p>
+</div>
+</div>
+</details>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="title">Key Takeaway</div>
+<div class="paragraph">
+<p>Platform Engineering doesn&#8217;t replace DevOps or SRE.</p>
+</div>
+<div class="paragraph">
+<p>Instead, it builds upon their strengths by creating reusable platforms that enable developers to deliver software faster while allowing operations teams to maintain security, governance, and reliability.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_the_evolution_of_platform_delivery"><a class="anchor" href="#_the_evolution_of_platform_delivery"></a>The Evolution of Platform Delivery</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Software delivery continues to evolve.</p>
+<div class="imageblock text-center">
+<div class="content">
+<img src="_images/graph.png" alt="graph" width="850">
+</div>
+</div>
+<details>
+<summary class="title">Traditional IT (Click to expand)</summary>
+<div class="content">
+<div class="paragraph">
+<p>Infrastructure provisioning was centralized.</p>
+</div>
+<div class="paragraph">
+<p>Developers relied heavily on operations teams to provision servers, configure environments, and deploy applications.</p>
+</div>
+</div>
+</details>
+<details>
+<summary class="title">DevOps (Click to expand)</summary>
+<div class="content">
+<div class="paragraph">
+<p>Developers gained greater ownership of the application lifecycle.</p>
+</div>
+<div class="paragraph">
+<p>This increased agility but also increased operational complexity and cognitive load.</p>
+</div>
+</div>
+</details>
+<details>
+<summary class="title">Platform Engineering (Click to expand)</summary>
+<div class="content">
+<div class="paragraph">
+<p>Platform teams provide reusable services, Golden Paths, and Internal Developer Platforms (IDPs).</p>
+</div>
+<div class="paragraph">
+<p>Developers consume these services through self-service workflows while platform teams maintain governance and standardization.</p>
+</div>
+</div>
+</details>
+<details>
+<summary class="title">AI-Assisted Development (Click to expand)</summary>
+<div class="content">
+<div class="paragraph">
+<p>Modern platforms are beginning to support AI assistants and autonomous agents alongside human developers.</p>
+</div>
+<div class="paragraph">
+<p>These platforms provide APIs, guardrails, and automation that enable both developers and AI to build, test, deploy, and operate applications safely.</p>
+</div>
+</div>
+</details>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Throughout this learning path, we&#8217;ll focus primarily on <strong>Platform Engineering</strong> because it forms the foundation of modern Application Platforms such as Red Hat OpenShift.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_check_your_understanding"><a class="anchor" href="#_check_your_understanding"></a>Check Your Understanding</h2>
+<div class="sectionbody">
+<iframe type="text/javascript" src="_attachments/section1-quiz.html" style="width: 100%; max-width: 1024px; height: 800px" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" frameborder="0"></iframe>
+</div>
+</div>
+<nav class="pagination">
+  <span class="prev"><a href="../index.html">Application Platform Delivery Foundations</a></span>
+  <span class="next"><a href="section2.html">Diving into Application Platform</a></span>
+</nav>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <img src="../../../_/img/rhl-logo-red.png" height="40px" alt="Red Hat"  href="https://redhat.com" >
+</footer><script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+<script defer src="../../../_/js/vendor/tabs.js"></script>
+<script defer src="../../../_/js/vendor/reading-time.js"></script>
+  </body>
+</html>

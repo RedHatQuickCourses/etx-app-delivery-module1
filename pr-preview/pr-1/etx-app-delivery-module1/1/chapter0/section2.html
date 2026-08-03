@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Diving into Application Platform :: Application Platform Delivery Foundations</title>
+    <link rel="prev" href="section1.html">
+    <link rel="next" href="section3.html">
+    <meta name="generator" content="Antora 3.2.0-alpha.12">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <link rel="stylesheet" href="../../../_/css/vendor/tabs.css">
+    <link rel="stylesheet" href="../../../_/css/vendor/collapsible.css">
+    <link rel="stylesheet" href="../../../_/css/vendor/reading-time.css">
+    <link rel="stylesheet" href="../../../_/css/vendor/audio-transcript.css">
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://www.redhat.com" target="_blank"><img src="../../../_/img/redhat-logo.png" height="40px" alt="Red Hat"></a>
+      <a class="navbar-item" style="font-size: 24px; color: white" href="../../..">Application Platform Delivery Foundations</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="https://github.com/RedHatQuickCourses/REPLACEREPONAME/issues" target="_blank">Report Issues</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="etx-app-delivery-module1" data-version="1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">Application Platform Delivery Foundations</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html">Application Platform Delivery Foundations</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="section1.html">The Evolution of Platform Delivery</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="section2.html">Diving into Application Platform</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="section3.html">Container Management vs Application Platform</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="section4.html">Delivering Application Platform</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="section5.html">Application Platform Litmus Test</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="section6.html">Meet the Teams</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="section7.html">Summary</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../references/references.html">References</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Application Platform Delivery Foundations</span>
+    <span class="version">1</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../index.html">Application Platform Delivery Foundations</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Application Platform Delivery Foundations</a></li>
+    <li><a href="section2.html">Diving into Application Platform</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Diving into Application Platform</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>In this lesson, you&#8217;ll learn why Kubernetes alone isn&#8217;t enough and how an <strong>Application Platform</strong> provides the capabilities organizations need to build, deliver, secure, and operate modern applications.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+As you progress through this lesson, think about the tools your organization currently uses. Which capabilities are already integrated, and which ones require separate products?
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_why_isnt_kubernetes_alone_enough"><a class="anchor" href="#_why_isnt_kubernetes_alone_enough"></a>Why Isn&#8217;t Kubernetes Alone Enough?</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Many organizations begin their cloud-native journey by adopting Kubernetes or a managed Kubernetes service.</p>
+</li>
+<li>
+<p>Kubernetes excels at orchestrating containerized workloads, but it doesn&#8217;t provide everything required to support the complete software development lifecycle.</p>
+</li>
+<li>
+<p>As organizations scale, development teams also require capabilities such as:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Application runtimes</p>
+</li>
+<li>
+<p>Build services</p>
+</li>
+<li>
+<p>CI/CD pipelines</p>
+</li>
+<li>
+<p>GitOps</p>
+</li>
+<li>
+<p>Container registries</p>
+</li>
+<li>
+<p>Observability</p>
+</li>
+<li>
+<p>Security and compliance</p>
+</li>
+<li>
+<p>Identity and access management</p>
+</li>
+<li>
+<p>Developer tools</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Without an integrated platform, organizations must select, integrate, secure, upgrade, and maintain each of these capabilities independently. This increases operational complexity and creates inconsistent developer experiences.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p><strong>Kubernetes answers the question:</strong> <strong>"How do I run containers?"</strong></p>
+</div>
+<div class="paragraph">
+<p><strong>An Application Platform answers the broader question:</strong> <strong>"How do I efficiently build, deliver, secure, and operate applications?"</strong></p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_what_is_an_application_platform"><a class="anchor" href="#_what_is_an_application_platform"></a>What is an Application Platform?</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>An <strong>Application Platform</strong> brings together the capabilities required to support the complete software development lifecycle.</p>
+</li>
+<li>
+<p>Rather than providing isolated tools, it delivers an integrated developer experience that enables organizations to standardize software delivery while allowing developers to focus on building applications.</p>
+<div class="imageblock text-center">
+<div class="content">
+<img src="_images/app.png" alt="app" width="900">
+</div>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+Click each capability area below to explore the services typically provided by an Application Platform.
+</td>
+</tr>
+</table>
+</div>
+<details>
+<summary class="title">Application Build (Click to expand)</summary>
+<div class="content">
+<div class="paragraph">
+<p>Application Build provides everything developers need to design, develop, modernize, and package applications.</p>
+</div>
+<div class="paragraph">
+<p>Typical capabilities include:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Application runtimes</p>
+</li>
+<li>
+<p>Developer tools</p>
+</li>
+<li>
+<p>Serverless platforms</p>
+</li>
+<li>
+<p>Cloud service integrations</p>
+</li>
+<li>
+<p>Migration tooling</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>These capabilities provide standardized development environments that help teams build applications faster while following consistent engineering practices.</p>
+</div>
+</div>
+</details>
+<details>
+<summary class="title">Application Delivery (Click to expand)</summary>
+<div class="content">
+<div class="paragraph">
+<p>Application Delivery automates how applications are built, tested, deployed, monitored, and managed throughout their lifecycle.</p>
+</div>
+<div class="paragraph">
+<p>Typical capabilities include:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>CI/CD pipelines</p>
+</li>
+<li>
+<p>GitOps</p>
+</li>
+<li>
+<p>Container registries</p>
+</li>
+<li>
+<p>Observability</p>
+</li>
+<li>
+<p>Logging</p>
+</li>
+<li>
+<p>Virtual machine support</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Together, these capabilities improve deployment consistency while reducing operational effort.</p>
+</div>
+</div>
+</details>
+<details>
+<summary class="title">Application Security (Click to expand)</summary>
+<div class="content">
+<div class="paragraph">
+<p>Application Security embeds security throughout the software delivery lifecycle instead of treating it as a separate activity.</p>
+</div>
+<div class="paragraph">
+<p>Typical capabilities include:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Service Mesh</p>
+</li>
+<li>
+<p>Vulnerability scanning</p>
+</li>
+<li>
+<p>Security policy enforcement</p>
+</li>
+<li>
+<p>Certificate and secret management</p>
+</li>
+<li>
+<p>Single Sign-On (SSO)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>By integrating security into the platform, organizations can deliver applications that are secure, compliant, and enterprise-ready.</p>
+</div>
+</div>
+</details>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="title">Key Takeaway</div>
+<div class="paragraph">
+<p>An <strong>Application Platform</strong> combines application development, delivery, and security capabilities into a unified developer experience, allowing teams to focus on delivering software rather than integrating and maintaining individual tools.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_check_your_understanding"><a class="anchor" href="#_check_your_understanding"></a>Check Your Understanding</h2>
+<div class="sectionbody">
+<iframe type="text/javascript" src="_attachments/section2-quiz.html" style="width: 100%; max-width: 1024px; height: 800px" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" frameborder="0"></iframe>
+</div>
+</div>
+<nav class="pagination">
+  <span class="prev"><a href="section1.html">The Evolution of Platform Delivery</a></span>
+  <span class="next"><a href="section3.html">Container Management vs Application Platform</a></span>
+</nav>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <img src="../../../_/img/rhl-logo-red.png" height="40px" alt="Red Hat"  href="https://redhat.com" >
+</footer><script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+<script defer src="../../../_/js/vendor/tabs.js"></script>
+<script defer src="../../../_/js/vendor/reading-time.js"></script>
+  </body>
+</html>
