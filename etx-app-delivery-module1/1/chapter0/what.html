@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Delivering an Application Platform with Red Hat OpenShift :: Introduction to Application Platforms and Platform Engineering</title>
-    <link rel="prev" href="section3.html">
-    <link rel="next" href="section5.html">
+    <title>Application Platform Delivery :: Introduction to Application Platforms and Platform Engineering</title>
+    <link rel="prev" href="../index.html">
+    <link rel="next" href="section1.html">
     <meta name="generator" content="Antora 3.2.0-alpha.12">
     <link rel="stylesheet" href="../../../_/css/site.css">
     <link rel="stylesheet" href="../../../_/css/custom.css">
@@ -51,7 +51,7 @@
   </li>
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
-  <li class="nav-item" data-depth="1">
+  <li class="nav-item is-current-page" data-depth="1">
     <button class="nav-item-toggle"></button>
     <a class="nav-link" href="what.html">Application Platform Delivery</a>
 <ul class="nav-list">
@@ -64,7 +64,7 @@
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="section3.html">Container Management vs Application Platform</a>
   </li>
-  <li class="nav-item is-current-page" data-depth="2">
+  <li class="nav-item" data-depth="2">
     <a class="nav-link" href="section4.html">Delivering Application Platform</a>
   </li>
   <li class="nav-item" data-depth="2">
@@ -124,7 +124,6 @@
   <ul>
     <li><a href="../index.html">Introduction to Application Platforms and Platform Engineering</a></li>
     <li><a href="what.html">Application Platform Delivery</a></li>
-    <li><a href="section4.html">Delivering Application Platform</a></li>
   </ul>
 </nav>
 </div>
@@ -133,11 +132,23 @@
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<h1 class="page">Delivering an Application Platform with Red Hat OpenShift</h1>
-<div id="preamble">
-<div class="sectionbody">
+<h1 class="page">Application Platform Delivery</h1>
+<div class="module-card">
+<div class="module-header">
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/mini-illustration-book-red-RH.Large_square_transparent.png" alt="mini illustration book red RH.Large square transparent" width="40">
+</div>
+</div>
 <div class="paragraph">
-<p>In this lesson, you&#8217;ll explore how <strong>Red Hat OpenShift</strong> extends Kubernetes to deliver a complete <strong>Application Platform</strong>. You&#8217;ll learn how OpenShift integrates application development, delivery, security, and platform engineering capabilities into a unified platform that supports the entire application lifecycle.</p>
+<p><strong>What&#8217;s in this module?</strong></p>
+</div>
+</div>
+<div class="paragraph">
+<p>In this module, you learn how an <strong>Application Platform</strong> provides the capabilities required to build, deploy, secure, and operate modern applications.</p>
+</div>
+<div class="paragraph">
+<p>In this lesson, you&#8217;ll discover how organizations use those capabilities to create a <strong>Software Factory</strong>—a standardized software delivery process that enables developers to build and deliver applications quickly, securely, and consistently.</p>
 </div>
 <div class="admonitionblock tip">
 <table>
@@ -146,122 +157,17 @@
 <i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
-As you progress through this lesson, identify the capabilities that transform Kubernetes into a complete Application Platform. Consider how integrating these capabilities into a single platform can simplify software delivery and improve the developer experience.
+<div class="paragraph">
+<p>As you progress through this lesson, think about how a new developer joins your organization today. How many manual steps are required before they can deploy their first application?</p>
+</div>
 </td>
 </tr>
 </table>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="_how_red_hat_openshift_delivers_an_application_platform"><a class="anchor" href="#_how_red_hat_openshift_delivers_an_application_platform"></a>How Red Hat OpenShift Delivers an Application Platform</h2>
-<div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Red Hat OpenShift</strong> builds on Kubernetes by integrating the capabilities required to support the complete application lifecycle.</p>
-</li>
-<li>
-<p>Rather than requiring organizations to assemble and maintain independent products, OpenShift provides a unified platform that includes developer tools, application runtimes, build services, CI/CD, GitOps, security, AI capabilities, and hybrid cloud support.</p>
-</li>
-<li>
-<p>The following diagram illustrates how these capabilities are layered on top of Kubernetes to create a complete Application Platform.</p>
-<div class="imageblock text-center">
-<div class="content">
-<img src="_images/map.png" alt="map" width="900">
-</div>
-</div>
-</li>
-</ul>
-</div>
-<div class="sect2">
-<h3 id="_openshift_capability_map"><a class="anchor" href="#_openshift_capability_map"></a>OpenShift Capability Map</h3>
-<div class="paragraph">
-<p>At the foundation, <strong>Red Hat Enterprise Linux</strong> provides the operating system, while <strong>Kubernetes</strong> delivers container orchestration and workload management.</p>
-</div>
-<div class="paragraph">
-<p>OpenShift extends this foundation by integrating capabilities for:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Application development</p>
-</li>
-<li>
-<p>Application builds</p>
-</li>
-<li>
-<p>CI/CD and GitOps</p>
-</li>
-<li>
-<p>Serverless</p>
-</li>
-<li>
-<p>Service Mesh</p>
-</li>
-<li>
-<p>Developer tools</p>
-</li>
-<li>
-<p>Internal Developer Platforms</p>
-</li>
-<li>
-<p>Security</p>
-</li>
-<li>
-<p>AI services</p>
-</li>
-<li>
-<p>Multicluster and hybrid cloud management</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>Together, these capabilities provide a consistent platform for building, deploying, securing, and operating applications across on-premises, public cloud, private cloud, virtualized environments, and edge locations.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_reflection"><a class="anchor" href="#_reflection"></a>Reflection</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p></p>
-</div>
-<details class="reflection-box">
-<summary class="title">Think about your own organization (Click to expand)</summary>
-<div class="content">
-<div class="imageblock text-left">
-<div class="content">
-<img src="../_images/mini-illustration-lightbulb-red-RH.Small_square_transparent.png" alt="mini illustration lightbulb red RH.Small square transparent" width="50">
-</div>
-</div>
-<div class="paragraph">
-<p>Reflect on your current software delivery platform.</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Which application platform capabilities are available out of the box?</p>
-</li>
-<li>
-<p>Which capabilities require separate products or manual integration?</p>
-</li>
-<li>
-<p>How much effort is spent maintaining those integrations?</p>
-</li>
-<li>
-<p>How could an integrated Application Platform simplify software delivery for your teams?</p>
-</li>
-</ul>
-</div>
-</div>
-</details>
-</div>
-</div>
 <nav class="pagination">
-  <span class="prev"><a href="section3.html">Container Management vs Application Platform</a></span>
-  <span class="next"><a href="section5.html">Application Platform Litmus Test</a></span>
+  <span class="prev"><a href="../index.html">Application Platform Delivery Foundations</a></span>
+  <span class="next"><a href="section1.html">The Evolution of Platform Delivery</a></span>
 </nav>
 </article>
   </div>
