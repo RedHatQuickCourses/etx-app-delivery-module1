@@ -1,5 +1,5 @@
 {
-  "totalSeconds": 744,
+  "totalSeconds": 736,
   "pageCount": 11,
   "pages": [
     {
@@ -10,7 +10,7 @@
     {
       "module": "chapter0",
       "page": "what.adoc",
-      "seconds": 18
+      "seconds": 10
     },
     {
       "module": "chapter0",
