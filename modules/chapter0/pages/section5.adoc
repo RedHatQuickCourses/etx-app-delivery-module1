@@ -46,38 +46,18 @@ By providing these capabilities through a consistent platform, organizations imp
 
 == Reflection
 
-.Think About Your Organization (Click to expand)
-[%collapsible]
+{empty}
+
+[.reflection-box%collapsible]
+.Think about your own organization (Click to expand)
 ====
+
+image::ROOT:mini-illustration-lightbulb-red-RH.Small_square_transparent.png[width=50, align=left]
+
 Consider your current software delivery platform.
 
 * Which of the four foundational capabilities are already integrated?
 * Which capabilities require separate products or manual integration?
 * Does your platform provide standardized developer workflows?
 * If a new developer joined your team today, how quickly could they build and deploy an application?
-====
-
-== Check Your Understanding
-
-.Quiz Time! (Click to expand)
-[%collapsible]
-====
-A platform provides the following capabilities:
-
-* Kubernetes
-* Application runtimes
-* CI/CD pipelines
-* Observability
-
-However, each development team is responsible for integrating its own security tools, deployment workflows, and developer onboarding process.
-
-Would you consider this a complete *Application Platform*?
-
-A. Yes
-
-B. No
-
-*Answer*
-
-**B** — Although several foundational capabilities are available, a complete Application Platform also provides an integrated developer experience with standardized workflows, built-in automation, and organizational guardrails.
 ====

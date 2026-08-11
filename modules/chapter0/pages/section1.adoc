@@ -80,7 +80,6 @@ Rather than building applications directly, Platform Engineers build reusable ca
 Their goal is to make the secure, compliant, and recommended path the easiest path for developers.
 ====
 
-.Key Takeaway
 [NOTE]
 ====
 Platform Engineering doesn't replace DevOps or SRE.
@@ -129,24 +128,4 @@ These platforms provide APIs, guardrails, and automation that enable both develo
 [NOTE]
 ====
 Throughout this learning path, we'll focus primarily on *Platform Engineering* because it forms the foundation of modern Application Platforms such as Red Hat OpenShift.
-====
-
-== Check Your Understanding
-
-.Quiz Time! (Click to expand)
-[%collapsible]
-====
-Which stage best matches each statement?
-
-. Developers own both application code and infrastructure.
-. Platform teams provide Golden Paths and self-service capabilities.
-. Operations teams provision infrastructure for every application.
-. AI assistants begin interacting directly with the platform.
-
-*Answers*
-
-1. DevOps
-2. Platform Engineering
-3. Traditional IT
-4. AI-Assisted Development
 ====

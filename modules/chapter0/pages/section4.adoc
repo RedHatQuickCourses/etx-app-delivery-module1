@@ -14,10 +14,9 @@ TIP: As you progress through this lesson, identify the capabilities that transfo
 * The following diagram illustrates how these capabilities are layered on top of Kubernetes to create a complete Application Platform.
 +
 image::map.png[align="center",width="900"]
-+
-.OpenShift Capability Map (Click to expand)
-[%collapsible]
-====
+
+=== OpenShift Capability Map
+
 At the foundation, *Red Hat Enterprise Linux* provides the operating system, while *Kubernetes* delivers container orchestration and workload management.
 
 OpenShift extends this foundation by integrating capabilities for:
@@ -34,41 +33,21 @@ OpenShift extends this foundation by integrating capabilities for:
 * Multicluster and hybrid cloud management
 
 Together, these capabilities provide a consistent platform for building, deploying, securing, and operating applications across on-premises, public cloud, private cloud, virtualized environments, and edge locations.
-====
 
 == Reflection
 
-.Think about your own organization (Cick to expand)
-[%collapsible]
+{empty}
+
+[.reflection-box%collapsible]
+.Think about your own organization (Click to expand)
 ====
+
+image::ROOT:mini-illustration-lightbulb-red-RH.Small_square_transparent.png[width=50, align=left]
+
 Reflect on your current software delivery platform.
 
 * Which application platform capabilities are available out of the box?
 * Which capabilities require separate products or manual integration?
 * How much effort is spent maintaining those integrations?
 * How could an integrated Application Platform simplify software delivery for your teams?
-====
-
-== Check Your Understanding
-
-.Quiz Time! (Click to expand)
-[%collapsible]
-====
-Your organization wants to provide developers with:
-
-* Standardized application runtimes
-* Automated CI/CD and GitOps
-* Integrated security
-* Built-in observability
-* Self-service developer workflows
-
-Which approach would best support these requirements?
-
-A. Kubernetes with separately integrated tools
-
-B. Red Hat OpenShift
-
-*Answer*
-
-**B** — Red Hat OpenShift provides these capabilities as an integrated Application Platform built on Kubernetes, reducing operational complexity while improving developer productivity.
 ====

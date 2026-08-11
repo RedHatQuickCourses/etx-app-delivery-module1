@@ -1,0 +1,28 @@
+= Application Platform Delivery 
+:navtitle: Application Platform Delivery 
+
+++++
+<div class="module-card">
+<div class="module-header">
+++++
+
+image::ROOT:mini-illustration-book-red-RH.Large_square_transparent.png[width=40, align=left] 
+
+**What's in this module?**
+
+++++
+</div>
+++++
+
+In this module, you learn how an *Application Platform* provides the capabilities required to build, deploy, secure, and operate modern applications.
+
+In this lesson, you'll discover how organizations use those capabilities to create a *Software Factory*—a standardized software delivery process that enables developers to build and deliver applications quickly, securely, and consistently.
+
+[TIP]
+====
+As you progress through this lesson, think about how a new developer joins your organization today. How many manual steps are required before they can deploy their first application?
+====
+
+++++
+</div>
+++++

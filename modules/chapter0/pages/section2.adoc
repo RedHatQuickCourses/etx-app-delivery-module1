@@ -91,28 +91,17 @@ Typical capabilities include:
 By integrating security into the platform, organizations can deliver applications that are secure, compliant, and enterprise-ready.
 ====
 
-.Key Takeaway
-[NOTE]
+
+== Reflection
+
+{empty}
+
+[.reflection-box%collapsible]
+.Think about your own organization (Click to expand)
 ====
+
+image::ROOT:mini-illustration-lightbulb-red-RH.Small_square_transparent.png[width=50, align=left]
+
 An *Application Platform* combines application development, delivery, and security capabilities into a unified developer experience, allowing teams to focus on delivering software rather than integrating and maintaining individual tools.
-====
 
-== Check Your Understanding
-
-.Quiz Time! (Click to expand)
-[%collapsible]
-====
-Which statement best describes an Application Platform?
-
-A. A platform that only manages containers.
-
-B. A collection of unrelated development tools.
-
-C. A unified platform that provides integrated capabilities for building, delivering, securing, and operating applications.
-
-D. A virtual machine management platform.
-
-*Answer*
-
-*C* — An Application Platform provides an integrated set of capabilities that support the complete software development lifecycle.
 ====

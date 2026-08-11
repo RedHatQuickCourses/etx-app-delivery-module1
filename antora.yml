@@ -1,7 +1,8 @@
 name: etx-app-delivery-module1
-title: "Application Platform Delivery Foundations"
+title: "Introduction to Application Platforms and Platform Engineering"
 version: 1
 nav:
 - modules/ROOT/nav.adoc
 - modules/chapter0/nav.adoc
+- modules/quiz/nav.adoc
 - modules/references/nav.adoc
