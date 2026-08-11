@@ -13,7 +13,8 @@ TIP: As you progress through this lesson, identify the capabilities that transfo
 
 * The following diagram illustrates how these capabilities are layered on top of Kubernetes to create a complete Application Platform.
 +
-image::map.png[align="center",width="900"]
+.App Platform Delivery with Red Hat Openshift(_Click the image to view it in full size in a new browser tab_)
+image::map.png[link={imagesdir}/map.png,align="center",width=900]
 
 === OpenShift Capability Map
 

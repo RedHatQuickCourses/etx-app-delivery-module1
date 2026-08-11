@@ -68,7 +68,8 @@ While DevOps increased delivery speed, it also introduced a new challenge—*dev
 ** Built-in security and governance
 ** Automated software delivery
 +
-image::opp.png[align="center",width="350"]
+.Click the image to view it in full size in a new browser tab
+image::opp.png[link={imagesdir}/opp.png,align="center",width="350"]
 +
 .Characteristics of Platform Engineering (Click to expand)
 [%collapsible]

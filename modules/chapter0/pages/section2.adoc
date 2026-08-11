@@ -38,7 +38,8 @@ TIP: As you progress through this lesson, think about the tools your organizatio
 
 * Rather than providing isolated tools, it delivers an integrated developer experience that enables organizations to standardize software delivery while allowing developers to focus on building applications.
 +
-image::app.png[align="center",width="900"]
+.Application Platform (_Click the image to view it in full size in a new browser tab_)
+image::app.png[link={imagesdir}/app.png,align="center",width=900]
 +
 TIP: Click each capability area below to explore the services typically provided by an Application Platform.
 +
