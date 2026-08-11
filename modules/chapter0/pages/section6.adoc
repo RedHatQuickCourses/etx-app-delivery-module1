@@ -11,7 +11,7 @@ TIP: As you progress through this lesson, think about your own organization. Whi
 
 * Rather than being owned by a single team, building and operating applications requires close collaboration between *Operations Engineers*, *Platform Engineers*, and *Application Developers*. Although they share the same business goals, each team has different responsibilities, priorities, and measures of success.
 +
-image::personas.png[align="center",width="900"]
+image::personas.png[align="center",width="600"]
 +
 [NOTE]
 ====
@@ -137,9 +137,14 @@ Although each team has different responsibilities, they all rely on the same App
 
 == Reflection
 
-.Think About Your Organization (Click to expand)
-[%collapsible]
+{empty}
+
+[.reflection-box%collapsible]
+.Think about your own organization (Click to expand)
 ====
+
+image::ROOT:mini-illustration-lightbulb-red-RH.Small_square_transparent.png[width=50, align=left]
+
 Consider how software is delivered in your organization.
 
 * Which persona best matches your current role?
@@ -147,9 +152,3 @@ Consider how software is delivered in your organization.
 * Where do developers experience the most friction?
 * Which persona would benefit the most from an Application Platform?
 ====
-
-== Check Your Understanding
-
-++++
-<iframe type="text/javascript" src="_attachments/section6-quiz.html" style="width: 100%; max-width: 1024px; height: 800px" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" frameborder="0"></iframe>
-++++

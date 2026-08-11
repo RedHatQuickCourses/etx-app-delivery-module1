@@ -81,9 +81,16 @@ Instead of assembling and maintaining dozens of independent tools, platform team
 
 TIP: The goal of an Application Platform isn't to replace Kubernetes—it extends Kubernetes with the capabilities required for modern software delivery.
 
-.Key Takeaway
-[NOTE]
+== Reflection
+
+{empty}
+
+[.reflection-box%collapsible]
+.Key Takeaway (Click to expand)
 ====
+
+image::ROOT:mini-illustration-lightbulb-red-RH.Small_square_transparent.png[width=50, align=left]
+
 A *Container Management Platform* answers the question:
 
 * *"How do I run containers?"*
@@ -92,9 +99,3 @@ An *Application Platform* answers the broader question:
 
 * *"How do I efficiently build, deliver, secure, and operate applications?"*
 ====
-
-== Check Your Understanding
-
-++++
-<iframe type="text/javascript" src="_attachments/section3-quiz.html" style="width: 100%; max-width: 1024px; height: 800px" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" frameborder="0"></iframe>
-++++

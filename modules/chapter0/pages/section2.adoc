@@ -91,14 +91,17 @@ Typical capabilities include:
 By integrating security into the platform, organizations can deliver applications that are secure, compliant, and enterprise-ready.
 ====
 
-.Key Takeaway
-[NOTE]
+
+== Reflection
+
+{empty}
+
+[.reflection-box%collapsible]
+.Think about your own organization (Click to expand)
 ====
+
+image::ROOT:mini-illustration-lightbulb-red-RH.Small_square_transparent.png[width=50, align=left]
+
 An *Application Platform* combines application development, delivery, and security capabilities into a unified developer experience, allowing teams to focus on delivering software rather than integrating and maintaining individual tools.
+
 ====
-
-== Check Your Understanding
-
-++++
-<iframe type="text/javascript" src="_attachments/section2-quiz.html" style="width: 100%; max-width: 1024px; height: 800px" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" frameborder="0"></iframe>
-++++

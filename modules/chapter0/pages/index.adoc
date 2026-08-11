@@ -1,5 +1,0 @@
-:imagesdir: ../images
-
-= Introduction to Application Platform Delivery
-
-

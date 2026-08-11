@@ -80,7 +80,6 @@ Rather than building applications directly, Platform Engineers build reusable ca
 Their goal is to make the secure, compliant, and recommended path the easiest path for developers.
 ====
 
-.Key Takeaway
 [NOTE]
 ====
 Platform Engineering doesn't replace DevOps or SRE.
@@ -130,9 +129,3 @@ These platforms provide APIs, guardrails, and automation that enable both develo
 ====
 Throughout this learning path, we'll focus primarily on *Platform Engineering* because it forms the foundation of modern Application Platforms such as Red Hat OpenShift.
 ====
-
-== Check Your Understanding
-
-++++
-<iframe type="text/javascript" src="_attachments/section1-quiz.html" style="width: 100%; max-width: 1024px; height: 800px" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" frameborder="0"></iframe>
-++++

@@ -1,0 +1,15 @@
+= Summary and What's Next?
+
+_Congratulations! You have successfully completed **Introduction to Application Platforms and Platform Engineering** module_
+
+In this module, you learned:
+
+* Evolution from DevOps to Platform Engineering
+* Application Platform concepts and capabilities
+* Kubernetes vs. Application Platforms
+* How Red Hat OpenShift delivers an Application Platform
+* Key platform personas and responsibilities
+
+In the next modules, you'll use this environment to implement automated software delivery pipelines, GitOps workflows, developer self-service capabilities, and trusted software supply chain practices.
+
+
