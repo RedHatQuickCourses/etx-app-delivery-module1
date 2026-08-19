@@ -10,6 +10,6 @@ In this module, you learned:
 * How Red Hat OpenShift delivers an Application Platform
 * Key platform personas and responsibilities
 
-In the next modules, you'll use this environment to implement automated software delivery pipelines, GitOps workflows, developer self-service capabilities, and trusted software supply chain practices.
+In the next modules, you'll use this knowledge to implement automated software delivery pipelines, GitOps workflows, developer self-service capabilities, and trusted software supply chain practices.
 
 
